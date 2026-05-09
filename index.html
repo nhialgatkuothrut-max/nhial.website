@@ -1,83 +1,212 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<html lang="en">
 <head>
-  
-  <meta charset="UTF-8">
-    
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nhial Gatkuoth Ruot</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      line-height: 1.6;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    nav {
-      background: #34495e;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      background: #fff;
-      margin-bottom: 20px;
-      border-radius: 8px;
-    }
-    h2 {
-      color: #2c3e50;
-    }
-    footer {
-      background: #2c3e50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-    }
-    .projects ul {
-      list-style: square;
-      padding-left: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nhial Gatkuoth Rut</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* NAVBAR */
+nav{
+    width:100%;
+    background:#001233;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#4da6ff;
+}
+
+/* HERO SECTION */
+.hero{
+    background:linear-gradient(to right,#001f4d,#0059b3);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.profile-photo{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.5);
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:28px;
+    margin-bottom:30px;
+}
+
+/* SOCIAL LINKS */
+.social-links a{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border:2px solid white;
+    border-radius:50%;
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-size:22px;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    background:white;
+    color:#0059b3;
+}
+
+/* ABOUT SECTION */
+.about{
+    max-width:1000px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.about h2{
+    font-size:45px;
+    margin-bottom:20px;
+    color:#001f4d;
+}
+
+.about p{
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav ul{
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:0 10px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.profile-photo{
+    width:170px;
+    height:170px;
+}
+
+.about h2{
+    font-size:35px;
+}
+
+.about p{
+    font-size:18px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>Nhial Gatkuoth Rut</h1>
-    <p>Electrical & Computer Engineering Student | Passionate Programmer</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- NAVIGATION -->
+<nav>
 
-  <section id="about">
-    <h2>About Me</h2>
+<div class="logo">Nhial Gatkuoth Rut</div>
+
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Education</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+<img src="https://github.com/user-attachments/assets/52bc24c3-cf5a-445c-836b-496cf450ecf4"
+alt="Nhial Gatkuoth Rut"
+class="profile-photo">
+
+<h1>Nhial Gatkuoth Rut</h1>
+
+<p>Electrical & Computer Engineering Student | Passionate Programmer</p>
+
+<div class="social-links">
+<a href="#">in</a>
+<a href="#">G</a>
+<a href="#">✉</a>
+<a href="#">☎</a>
+</div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about">
+
+<h2>About Me</h2>
+
     <p>Hello, I’m Nhial Gatkuoth Rut. I’m 25 years old and currently studying Electrical and Computer Engineering at Wollega University.
       My Journey: From Akobo to the Future of South Sudan 
       I was born in a small, resilient village in South Sudan known as Akobo County. My childhood was rooted in the strength of my community, but like many of my peers, my life was upended when conflict broke out. The war forced me to leave my home and seek refuge in Ethiopia, a transition that marked the beginning of a challenging yet transformative chapter in my life.
