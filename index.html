@@ -4,286 +4,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nhial Gatkuoth Rut</title>
+<title>Nhial Portfolio</title>
 
 <style>
-
-/* RESET */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-/* BODY */
 body{
-    font-family: Arial, sans-serif;
-    background:#f4f4f4;
-    color:#333;
+  margin:0;
+  font-family:Arial;
+  color:white;
+  overflow-x:hidden;
 }
 
-/* NAVBAR */
+/* Animated background */
+.bg{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  background:linear-gradient(-45deg,#0f172a,#1e293b,#111827,#0b1220);
+  background-size:400% 400%;
+  animation:bg 10s infinite;
+}
+
+@keyframes bg{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* Navbar */
 nav{
-    width:100%;
-    background:#001233;
-    padding:20px 60px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+  position:fixed;
+  top:10px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:20px;
+  background:rgba(0,0,0,0.5);
+  padding:10px 20px;
+  border-radius:30px;
 }
 
-.logo{
-    color:white;
-    font-size:30px;
-    font-weight:bold;
+nav a{
+  color:white;
+  text-decoration:none;
 }
 
-nav ul{
-    display:flex;
-    list-style:none;
-}
-
-nav ul li{
-    margin-left:30px;
-}
-
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    font-size:18px;
-    transition:0.3s;
-}
-
-nav ul li a:hover{
-    color:#4da6ff;
-}
-
-/* HERO SECTION */
+/* Hero */
 .hero{
-    background:linear-gradient(to right,#001f4d,#0059b3);
-    color:white;
-    text-align:center;
-    padding:80px 20px;
+  text-align:center;
+  padding:140px 20px;
 }
 
-.profile-photo{
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    object-fit:cover;
-    border:6px solid white;
-    box-shadow:0 5px 20px rgba(0,0,0,0.5);
-    margin-bottom:25px;
+.btn{
+  background:#38bdf8;
+  padding:10px 15px;
+  border-radius:8px;
+  display:inline-block;
+  margin-top:10px;
+  color:black;
+  text-decoration:none;
 }
 
-.hero h1{
-    font-size:70px;
-    margin-bottom:15px;
+.cv{background:#22c55e;}
+
+/* Sections */
+section{
+  padding:50px;
 }
 
-.hero p{
-    font-size:28px;
-    margin-bottom:30px;
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:10px;
 }
 
-/* SOCIAL LINKS */
-.social-links a{
-    display:inline-block;
-    width:50px;
-    height:50px;
-    line-height:50px;
-    border:2px solid white;
-    border-radius:50%;
-    color:white;
-    margin:10px;
-    text-decoration:none;
-    font-size:22px;
-    transition:0.3s;
+/* Contact */
+input,textarea{
+  width:100%;
+  padding:10px;
+  margin:5px 0;
 }
-
-.social-links a:hover{
-    background:white;
-    color:#0059b3;
-}
-
-/* ABOUT SECTION */
-.about{
-    max-width:1000px;
-    margin:auto;
-    padding:70px 20px;
-}
-
-.about h2{
-    font-size:45px;
-    margin-bottom:20px;
-    color:#001f4d;
-}
-
-.about p{
-    font-size:22px;
-    line-height:1.8;
-}
-
-/* MOBILE RESPONSIVE */
-@media(max-width:768px){
-
-nav{
-    flex-direction:column;
-    padding:20px;
-}
-
-nav ul{
-    margin-top:20px;
-}
-
-nav ul li{
-    margin:0 10px;
-}
-
-.hero h1{
-    font-size:42px;
-}
-
-.hero p{
-    font-size:20px;
-}
-
-.profile-photo{
-    width:170px;
-    height:170px;
-}
-
-.about h2{
-    font-size:35px;
-}
-
-.about p{
-    font-size:18px;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<div class="bg"></div>
+
 <nav>
-
-<div class="logo">Nhial Gatkuoth Rut</div>
-
-<ul>
-<li><a href="#">About</a></li>
-<li><a href="#">Projects</a></li>
-<li><a href="#">Education</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
-
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<!-- HERO SECTION -->
-<section class="hero">
+<div class="hero">
+  <h1>Nhial Gatkuoth Rut</h1>
+  <p>Electrical & Computer Engineering Student</p>
 
-<img src="https://github.com/user-attachments/assets/52bc24c3-cf5a-445c-836b-496cf450ecf4"
-alt="Nhial Gatkuoth Rut"
-class="profile-photo">
-
-<h1>Nhial Gatkuoth Rut</h1>
-
-<p>Electrical & Computer Engineering Student | Passionate Programmer</p>
-
-<div class="social-links">
-<a href="#">in</a>
-<a href="#">G</a>
-<a href="#">✉</a>
-<a href="#">☎</a>
+  <a class="btn" href="#contact">Contact</a>
+  <a class="btn cv" href="cv.pdf" download>Download CV</a>
 </div>
 
+<section id="about">
+  <div class="card">
+    <h2>About</h2>
+    <p>Engineering student from Wollega University, passionate about programming and electronics.</p>
+  </div>
 </section>
 
-<!-- ABOUT SECTION -->
-<section class="about">
-
-<h2>About Me</h2>
-
-    <p>Hello, I’m Nhial Gatkuoth Rut. I’m 25 years old and currently studying Electrical and Computer Engineering at Wollega University.
-      My Journey: From Akobo to the Future of South Sudan 
-      I was born in a small, resilient village in South Sudan known as Akobo County. My childhood was rooted in the strength of my community, but like many of my peers, my life was upended when conflict broke out. The war forced me to leave my home and seek refuge in Ethiopia, a transition that marked the beginning of a challenging yet transformative chapter in my life.
-Upon arriving in Ethiopia, I remained steadfast in my commitment to education. I resumed my studies in Grade 8, navigating a new curriculum and environment. Through hard work and perseverance, I successfully sat for the Ethiopian National Entrance Examination. My academic performance earned me a placement at Wollega University, where I began my journey as a freshman.
-Driven by a passion for technology and problem-solving, I excelled in my freshman courses and qualified for the Pre-Engineering track. When the time came to specialize, I chose Electrical and Computer Engineering as my first choice. Today, I am proud to be a third-year student in this rigorous field.
-My goal is to complete my Bachelor’s degree at Wollega University with excellence. However, my journey does not end with a diploma. My ultimate ambition is to return to South Sudan and use the technical expertise I have gained in Ethiopia to serve my community. Whether through developing infrastructure, improving telecommunications, or mentoring the next generation of students, I am dedicated to contributing to the rebuilding and progress of South Sudan as a whole.
-      My passion lies in computer programming, where I enjoy solving problems and building creative solutions.</p>
- </p>
-
-</div>
-
+<section id="skills">
+  <div class="card">
+    <h2>Skills</h2>
+    <p>Java, C++, HTML, CSS, Signal Processing, Electronics</p>
+  </div>
 </section>
 
-<!-- PROJECTS SECTION -->
-<section class="section" id="projects">
+<section id="contact">
+  <div class="card">
+    <h2>Contact</h2>
 
-<h2>Projects</h2>
+    <form action="mailto:nhialgatkuothrut@gmail.com">
+      <input placeholder="Name">
+      <input placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button>Send</button>
+    </form>
 
-<div class="card">
-
-<ul>
-<li>Java programs exploring object-oriented concepts</li>
-<li>Signal processing experiments (time shifting, scaling, symmetry)</li>
-<li>Electronics lab setups (PN junctions, Zener diodes)</li>
-<li>Electrical & Computer Engineering projects</li>
-</ul>
-
-</div>
-
+  </div>
 </section>
 
-<!-- EDUCATION SECTION -->
-<section class="section" id="education">
-
-<h2>Education</h2>
-
-<div class="card">
-
-<h3>Wollega University</h3>
-
-<p>
-Electrical & Computer Engineering
-</p>
-
-<p>
-Coursework includes Signals & Systems,
-Computer Architecture,
-and Advanced Engineering Mathematics.
-</p>
-
-</div>
-
-</section>
-
-<!-- CONTACT SECTION -->
-<section class="section" id="contact">
-
-<h2>Contact</h2>
-
-<div class="card">
-
-<p><strong>Email:</strong> nhialgatkuothrut@gmail.com</p>
-
-<p><strong>LinkedIn:</strong> nhialgatkuothrut</p>
-
-<p><strong>YouTube:</strong> @nhialgatkuothrut5751</p>
-
-<p><strong>Phone:</strong> +251967753420</p>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-<footer>
-© 2026 Nhial Gatkuoth Rut | All Rights Reserved
-</footer>
+<script>
+// simple JS animation or future upgrade
+console.log("Portfolio Loaded");
+</script>
 
 </body>
 </html>
