@@ -1,0 +1,129 @@
+
+
+/* ================= CONTACT SECTION ================= */
+
+#contact{
+    padding:80px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:100%;
+    max-width:700px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.card h2{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.card p{
+    text-align:center;
+    color:#ddd;
+    margin-bottom:25px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    background:#f1f5f9;
+}
+
+input:focus,
+textarea:focus{
+    border:2px solid #38bdf8;
+}
+
+textarea{
+    resize:vertical;
+    min-height:150px;
+}
+
+button{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#38bdf8;
+    color:#000;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:white;
+    transform:translateY(-3px);
+}
+
+.contact-info{
+    margin-top:30px;
+    text-align:center;
+}
+
+.contact-info p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.contact-info a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+.contact-info a:hover{
+    color:white;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.card{
+    padding:25px;
+}
+
+.card h2{
+    font-size:28px;
+}
+
+input,
+textarea,
+button{
+    font-size:16px;
+}
+
+}
+
+
+
+#contact{
+    padding:80px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:100%;
