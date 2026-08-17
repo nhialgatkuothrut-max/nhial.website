@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive CSS Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="logo">BrandDash</div>
+      <nav class="nav-links">
+        <a href="#" class="active">Overview</a>
+        <a href="#">Analytics</a>
+        <a href="#">Orders</a>
+        <a href="#">Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="main-body">
+      <!-- Top Header -->
+      <header class="header">
+        <div class="search-bar">
+          <input type="text" placeholder="Search data...">
+        </div>
+        <div class="user-profile">
+          <span class="user-name">Alex Rivera</span>
+        </div>
+      </header>
+
+      <!-- Main Dashboard Panels -->
+      <main class="content">
+        <!-- Summary Cards Layout -->
+        <section class="stat-cards">
+          <div class="card">
+            <h3>Total Revenue</h3>
+            <p class="stat-number">$24,500</p>
+            <span class="trend positive">+12% vs last month</span>
+          </div>
+          <div class="card">
+            <h3>Active Users</h3>
+            <p class="stat-number">1,240</p>
+            <span class="trend positive">+4.3% vs last week</span>
+          </div>
+          <div class="card">
+            <h3>Conversion Rate</h3>
+            <p class="stat-number">2.84%</p>
+            <span class="trend negative">-0.5% vs yesterday</span>
+          </div>
+        </section>
+
+        <!-- Secondary Information Panel Grid -->
+        <section class="data-panels">
+          <div class="panel main-panel">
+            <h3>Performance Overview</h3>
+            <div class="placeholder-graph"></div>
+          </div>
+          <div class="panel side-panel">
+            <h3>Recent Actions</h3>
+            <ul class="activity-list">
+              <li>User #3402 upgraded plan</li>
+              <li>Payout of $1,200 processed</li>
+              <li>New ticket submitted</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
